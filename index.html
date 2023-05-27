@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       <h1>Simple Calculator</h1>
+                <label for="first">First Number:</label>
+                <input type="number" name="first" id="first" placeholder="Enter First Number"><br><br>
+                <select name="arthop" id="arthop">
+                        <option value="select">Select</option>
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                </select><br><br>
+                <label for="second">Second Number:</label>
+                <input type="number" name="second" id="second" placeholder="Enter Second Number"> <br><br>
+                <button onclick="myCalc()">calculate</button><br><br>
+                <input type="text" id="result">   
+                <!--code for functioning calculation-->
+        <script type="text/javascript">
+                function myCalc(){
+                        var firstNum = document.getElementById('first').value;
+                        var secondNum = document.getElementById('second').value;
+                        var operation = document.getElementById('arthop').value;
+                            if (operation =='+'){
+                                var result =parseInt(firstNum) + parseInt(secondNum);
+                        }  if (operation =='-'){
+                                var result =parseInt(firstNum) - parseInt(secondNum);
+                        }  if (operation =='*'){
+                                var result =parseInt(firstNum)*parseInt(secondNum);
+                        } if (operation =='/'){
+                                var result =parseInt(firstNum)/parseInt(secondNum);
+                        }
+                 document.getElementById('result').value=result;
+                }
+        </script>
+</body>
+</html>

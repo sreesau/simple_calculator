@@ -1,0 +1,17 @@
+body{
+   margin: 30px 20px 20px 30px;
+   border: 1px solid #000000 ;
+   padding: 30px 30px 30px 30px;
+   font-size: 18px;
+}
+h1{
+   text-align: center;
+   color:#0000ff;
+   font-size: 40pxpx;
+}
+#arthop{
+ font-size: medium;
+}
+button{
+   font-size: medium;
+}
